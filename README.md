@@ -10,7 +10,6 @@
 [![Platform](https://img.shields.io/badge/platform-ESP8266-black.svg)](#hardware)
 [![Built With](https://img.shields.io/badge/built%20with-C++%20%7C%20Arduino-purple.svg)](https://www.arduino.cc/)
 [![Control Method](https://img.shields.io/badge/control%20method-Web%20Server-blue.svg)](#how-it-works)
-[![Application](https://img.shields.io/badge/application-Home%20Automation-green.svg)](#introduction)
 [![GitHub Stars](https://img.shields.io/github/stars/Farnaztr/IoT-Remote-Control-Switch?style=social)](https://github.com/Farnaztr/IoT-Remote-Control-Switch/stargazers)
 
 </div>
