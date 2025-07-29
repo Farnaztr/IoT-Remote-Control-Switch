@@ -1,6 +1,6 @@
 # 💡 IoT Remote Control Switch - Smart Lighting/Appliance Control
 
-## 📘 Introduction
+## Introduction
 
 Have you ever wished you could control your home lights or appliances remotely, using just your smartphone, without needing any intermediate device like a dedicated hub or a computer always running? The "IoT Remote Control Switch" project does exactly that!
 
@@ -10,7 +10,7 @@ This project is perfect for beginners in IoT and home automation, offering a pra
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Wireless Control:** Turn your electrical appliances ON/OFF over Wi-Fi.
 - **Standalone Operation:** No need for a laptop or an intermediary server after initial programming.
@@ -22,7 +22,7 @@ This project is perfect for beginners in IoT and home automation, offering a pra
 
 ---
 
-## 💡 How It Works
+## How It Works
 
 This project is based on the **"NodeMCU as a Web Server"** architecture:
 
@@ -35,16 +35,16 @@ This project is based on the **"NodeMCU as a Web Server"** architecture:
 
 ---
 
-## 🎥 Project Demonstration
+## Project Demonstration
 
 Watch this short video to see the IoT Remote Control Switch in action:
 
 📺 YouTube: `https://www.youtube.com/watch?v=YOUR_VIDEO_ID`  
-(Replace `YOUR_VIDEO_ID` with your actual video link)
+
 
 ---
 
-## 📸 Project Photos
+## Project Photos
 
 - Assembled Board  
 - Final Enclosure  
@@ -54,7 +54,7 @@ Watch this short video to see the IoT Remote Control Switch in action:
 
 ---
 
-## ⚙️ Components Required
+## Components Required
 
 | Component                               | Quantity |
 |-----------------------------------------|----------|
@@ -113,4 +113,5 @@ Watch this short video to see the IoT Remote Control Switch in action:
 ```cpp
 const char* ssid = "YOUR_WIFI_SSID";
 const char* password = "YOUR_WIFI_PASSWORD";
-
+```
+🔒 Important: Do not upload your real Wi-Fi credentials to GitHub!
