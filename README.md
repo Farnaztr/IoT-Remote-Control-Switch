@@ -5,7 +5,6 @@
 # IRCS –  IoT Remote Control Switch
 **Smartphone-controlled 220V appliance switch via ESP8266.**
 
-Control your home lights or appliances remotely using your phone or computer, through a simple web interface hosted on an ESP8266 NodeMCU. Once programmed, the device works completely standalone – no need for a laptop or internet connection afterward.
 
 
 [![Platform](https://img.shields.io/badge/platform-ESP8266-black.svg)](#hardware)
