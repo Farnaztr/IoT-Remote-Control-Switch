@@ -41,8 +41,7 @@ This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
 ## Project Demonstration
 
-[IoT Remote Control Switch](https://github.com/Farnaztr/IoT-Remote-Control-Switch/blob/main/videos/IMG_6257.MOV?raw=true)
----
+[IoT Remote Control Switch](https://github.com/Farnaztr/IoT-Remote-Control-Switch/blob/main/IMG_6257.MOV?raw=true)
 
 ## 📸 Project Photos
 
