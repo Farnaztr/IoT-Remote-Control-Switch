@@ -1,5 +1,7 @@
 # 💡 IoT Remote Control Switch 
 
+---
+
 ## Introduction
 
 Have you ever wished you could control your home lights or appliances remotely, using just your smartphone, without needing any intermediate device like a dedicated hub or a computer always running? The "IoT Remote Control Switch" project does exactly that!
