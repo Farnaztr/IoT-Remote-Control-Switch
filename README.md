@@ -11,6 +11,8 @@ Control your home lights or appliances remotely using your phone or computer, th
 [![Application](https://img.shields.io/badge/application-Home%20Automation-green.svg)](#introduction)
 [![GitHub Stars](https://img.shields.io/github/stars/Farnaztr/IoT-Remote-Control-Switch?style=social)](https://github.com/Farnaztr/IoT-Remote-Control-Switch/stargazers)
 
+</div>
+
 ---
 
 ## Introduction
