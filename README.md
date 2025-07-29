@@ -1,4 +1,4 @@
-# 💡 IoT Remote Control Switch - Smart Lighting/Appliance Control
+# 💡 IoT Remote Control Switch 
 
 ## Introduction
 
