@@ -47,7 +47,7 @@ This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
 ## 📸 Project Photos
 
-> ![alt text](./5785234327267821675.jpg)
+<img src="5785234327267821675.jpg" alt="My Setup" width="300"/>
 
 
 - Assembled NodeMCU + Relay Module
