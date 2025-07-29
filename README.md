@@ -98,7 +98,7 @@ This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
 > ⚠️ **Safety First:** Always disconnect power before wiring. If unsure, ask an electrician!
 
-<img src="esp8266-relay-wiring-diagram.jpg" alt="My Setup" height="400"/>  
+<img src="esp8266-relay-wiring-diagram.jpg" alt="My Setup" height="300"/>  
 
 ---
 
