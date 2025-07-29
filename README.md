@@ -1,12 +1,12 @@
-# 💡 IoT Remote Control Switch 
+# 💡 IoT Remote Control Switch
 
 Control your home lights or appliances remotely using your phone or computer, through a simple web interface hosted on an ESP8266 NodeMCU. Once programmed, the device works completely standalone – no need for a laptop or internet connection afterward.
 
 ---
 
-## Introduction
+## 🧠 Introduction
 
-Have you ever wished you could control your home lights or appliances remotely, using just your smartphone, without needing any intermediate device like a dedicated hub or a computer always running? The "IoT Remote Control Switch" project does exactly that!
+Have you ever wished you could control your home lights or appliances remotely, using just your smartphone, without needing any intermediate device like a dedicated hub or a computer always running? The **IoT Remote Control Switch** project does exactly that!
 
 By leveraging a NodeMCU (ESP8266) board and a relay module, you can easily transform any 220V electrical appliance into a smart device, controllable via a simple web page in your phone's browser. This project operates completely autonomously — once programmed, it requires no further connection to a laptop or PC.
 
@@ -14,10 +14,10 @@ This project is perfect for beginners in IoT and home automation, offering a pra
 
 ---
 
-## Key Features
+## 🚀 Key Features
 
 - **Wireless Control:** Turn your electrical appliances ON/OFF over Wi-Fi.
-- **Standalone Operation:** No need for a laptop or an intermediary server after initial programming.
+- **Standalone Operation:** No need for a laptop or intermediary server after initial programming.
 - **Simple Web Interface:** Minimalist and user-friendly interface accessible via any smartphone browser.
 - **Cost-Effective:** Utilizes affordable and readily available electronic components.
 - **Scalable:** Provides a solid foundation for more complex IoT projects.
@@ -26,39 +26,37 @@ This project is perfect for beginners in IoT and home automation, offering a pra
 
 ---
 
-## How It Works
+## ⚙️ How It Works
 
-This project is based on the **"NodeMCU as a Web Server"** architecture:
+This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
 1. **Wi-Fi Connection:** On power-up, the NodeMCU connects to your home Wi-Fi network using stored credentials.
-2. **Internal Web Server:** The NodeMCU runs a small embedded HTTP server.
-3. **Serves Control Page:** Entering the NodeMCU's IP in your browser loads a basic control page.
-4. **Command Transmission:** Clicking the ON/OFF buttons sends HTTP GET requests to the NodeMCU.
-5. **Relay Control:** NodeMCU sets the appropriate GPIO pin HIGH/LOW to activate the relay.
-6. **220V Control:** The relay switches the appliance on or off by breaking or completing the 220V circuit.
+2. **Internal Web Server:** The board runs a small embedded HTTP server.
+3. **Control Page:** When you enter the NodeMCU's IP in your browser, it serves a control page.
+4. **HTTP Commands:** ON/OFF buttons send HTTP GET requests to the board.
+5. **GPIO Control:** The board sets the designated GPIO pin to HIGH or LOW based on request.
+6. **Relay Activation:** Relay switches the connected 220V appliance accordingly.
 
 ---
 
-## Project Demonstration
+## 🎥 Project Demonstration
 
-Watch this short video to see the IoT Remote Control Switch in action:
-
-📺 YouTube: `https://www.youtube.com/watch?v=YOUR_VIDEO_ID`  
+📺 *Add a YouTube video link here if available:*
 
 
 ---
 
-## Project Photos
+## 📸 Project Photos
 
-- Assembled Board  
-- Final Enclosure  
-- In Action  
+> 📷 Replace these with your actual project photos.
 
-📷 *(Replace placeholders with your actual project photos.)*
+- Assembled NodeMCU + Relay Module
+- Relay + Appliance Setup
+- Final Installation in Enclosure
 
 ---
 
-## Components Required
+## 🧰 Components Required
 
 | Component                               | Quantity |
 |-----------------------------------------|----------|
@@ -74,48 +72,52 @@ Watch this short video to see the IoT Remote Control Switch in action:
 
 ## 🔌 Wiring Diagram
 
-**NodeMCU → Relay Module:**
+**Low Voltage: NodeMCU → Relay Module**
 
 - `VIN` → `VCC`
 - `GND` → `GND`
 - `D8 (GPIO15)` → `IN` *(RELAY_PIN)*
 
-**Relay Module → 220V Appliance:**
+**High Voltage: Relay Module → 220V Appliance**
 
-- Cut **Live (L)** wire from the power source.
-- One end → `COM` on Relay
-- Other end → `NO` (Normally Open)
-- **Neutral (N)** connects directly to the appliance.
+- Cut the **Live (L)** wire from the wall outlet.
+  - One end → `COM` on Relay
+  - Other end → `NO` (Normally Open) on Relay
+- **Neutral (N)** goes directly from wall to appliance.
 
-> ⚠️ **SAFETY FIRST:** Disconnect mains power before wiring! Consult an electrician if unsure.
+> ⚠️ **Safety First:** Always disconnect power before wiring. If unsure, ask an electrician!
 
-📷 `esp8266-relay-wiring-diagram.jpg`
+📷 *(Add a wiring diagram image here)*
 
 ---
 
 ## 💻 Software Setup
 
-### 1. Preparing Arduino IDE
+### 1. Preparing the Arduino IDE
 
-- Install **ESP8266 Board Support**:
-  - File → Preferences → Add URL:  
-    `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
-  - Then: Tools → Board → Boards Manager → Search `esp8266` → Install.
+Install the ESP8266 Board Support:
 
-- Required Libraries:
-  - `ESP8266WiFi.h`  
-  - `ESP8266WebServer.h`  
-  *(Usually auto-installed with the board package)*
+- Open **Arduino IDE** → File → Preferences  
+- In *Additional Board URLs* paste:
+
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+
+- Go to Tools → Board → Boards Manager → Search "`esp8266`" → Install **ESP8266 by ESP8266 Community**
+
+Required Libraries (auto-installed with board package):
+
+- `ESP8266WiFi.h`
+- `ESP8266WebServer.h`
 
 ---
 
 ### 2. Uploading the Code
 
-- Open your `.ino` file in Arduino IDE.
-- Replace credentials in these lines:
+1. Open your `.ino` file in Arduino IDE.
+2. Replace Wi-Fi credentials:
 
 ```cpp
 const char* ssid = "YOUR_WIFI_SSID";
 const char* password = "YOUR_WIFI_PASSWORD";
-```
-🔒 Important: Do not upload your real Wi-Fi credentials to GitHub!
+
