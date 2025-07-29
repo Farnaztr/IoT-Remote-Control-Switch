@@ -4,7 +4,7 @@ Control your home lights or appliances remotely using your phone or computer, th
 
 ---
 
-## 🧠 Introduction
+## Introduction
 
 Have you ever wished you could control your home lights or appliances remotely, using just your smartphone, without needing any intermediate device like a dedicated hub or a computer always running? The **IoT Remote Control Switch** project does exactly that!
 
@@ -14,7 +14,7 @@ This project is perfect for beginners in IoT and home automation, offering a pra
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Wireless Control:** Turn your electrical appliances ON/OFF over Wi-Fi.
 - **Standalone Operation:** No need for a laptop or intermediary server after initial programming.
@@ -26,7 +26,7 @@ This project is perfect for beginners in IoT and home automation, offering a pra
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
@@ -39,16 +39,15 @@ This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
 ---
 
-## 🎥 Project Demonstration
+## Project Demonstration
 
-📺 *Add a YouTube video link here if available:*
-
+📺 *(Add YouTube video link or embed here)*
 
 ---
 
 ## 📸 Project Photos
 
-> 📷 Replace these with your actual project photos.
+> *(Add photos of your build here)*
 
 - Assembled NodeMCU + Relay Module
 - Relay + Appliance Setup
@@ -56,7 +55,7 @@ This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
 ---
 
-## 🧰 Components Required
+## Components Required
 
 | Component                               | Quantity |
 |-----------------------------------------|----------|
@@ -100,8 +99,9 @@ Install the ESP8266 Board Support:
 - Open **Arduino IDE** → File → Preferences  
 - In *Additional Board URLs* paste:
 
+```
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
-
+```
 
 - Go to Tools → Board → Boards Manager → Search "`esp8266`" → Install **ESP8266 by ESP8266 Community**
 
@@ -120,4 +120,56 @@ Required Libraries (auto-installed with board package):
 ```cpp
 const char* ssid = "YOUR_WIFI_SSID";
 const char* password = "YOUR_WIFI_PASSWORD";
+```
 
+3. Check GPIO Relay Pin:
+
+```cpp
+const int RELAY_PIN = D8;
+```
+
+> If relay logic is reversed, flip HIGH/LOW values in `digitalWrite()`.
+
+4. Select the board and port:
+
+- Board: **NodeMCU 1.0 (ESP-12E Module)**
+- Port: **COMx** (whichever matches your device)
+
+5. Upload the sketch using the ▶️ Upload button.
+
+---
+
+## 📱 Using the Switch
+
+1. Open **Serial Monitor** (baud: 115200) after upload.
+2. Wait for this message:
+
+```text
+Connected! IP address: 192.168.X.X
+```
+
+3. Unplug USB from your laptop.
+4. Power NodeMCU using a 5V phone charger.
+5. On your phone (connected to the same Wi-Fi), open:
+
+```
+http://192.168.X.X
+```
+
+6. Use the web interface to turn your appliance ON/OFF.
+
+---
+
+## ⚠️ Safety Precautions
+
+- ⚡ **220V is dangerous! Always disconnect power before wiring.**
+- Use a plastic **electrical enclosure** to avoid electric shock.
+- Double-check wiring against the **relay module’s datasheet**.
+- Never touch the relay or wires when the system is powered.
+- If unsure, consult a qualified electrician.
+
+---
+
+## 📂 License
+
+MIT License. Feel free to modify and use this project in your own builds.
