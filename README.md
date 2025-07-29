@@ -2,6 +2,8 @@
 
 <img src="https://img.icons8.com/fluency/96/light-on.png" width="80" alt="Smart Light Icon" />
 
+# IRCS –  IoT Remote Control Switch
+
 Control your home lights or appliances remotely using your phone or computer, through a simple web interface hosted on an ESP8266 NodeMCU. Once programmed, the device works completely standalone – no need for a laptop or internet connection afterward.
 
 
