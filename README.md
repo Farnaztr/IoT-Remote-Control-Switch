@@ -86,7 +86,6 @@ This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
 > ⚠️ **Safety First:** Always disconnect power before wiring. If unsure, ask an electrician!
 
-📷 *(Add a wiring diagram image here)*
 
 ---
 
