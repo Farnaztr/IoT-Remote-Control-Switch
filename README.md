@@ -174,7 +174,7 @@ http://192.168.X.X
 
 ## ⚠️ Safety Precautions
 
-- ⚡ **220V is dangerous! Always disconnect power before wiring.**
+- **220V is dangerous! Always disconnect power before wiring.**
 - Use a plastic **electrical enclosure** to avoid electric shock.
 - Double-check wiring against the **relay module’s datasheet**.
 - Never touch the relay or wires when the system is powered.
