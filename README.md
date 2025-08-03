@@ -184,7 +184,7 @@ http://192.168.X.X
 
 ## on Telegram
 
-(https://t.me/CodeMatrixx)
+[Bit-Zone](https://t.me/CodeMatrixx)
 
 ---
 
