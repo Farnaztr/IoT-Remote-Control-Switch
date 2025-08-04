@@ -93,7 +93,7 @@ This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
 - Cut the **Live (L)** wire from the wall outlet.
   - One end → `COM` on Relay
-  - Other end → `NO` (Normally Open) on Relay
+  - Other end → `NO` on Relay
 - **Neutral (N)** goes directly from wall to appliance.
 
 > ⚠️ **Safety First:** Always disconnect power before wiring. If unsure, ask an electrician!
