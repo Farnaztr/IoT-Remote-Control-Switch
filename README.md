@@ -85,8 +85,8 @@ This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
 **Low Voltage: NodeMCU → Relay Module**
 
-- `VIN` → `VCC`
-- `GND` → `GND`
+- `VIN` → `DC+`
+- `GND` → `DC-`
 - `D8 (GPIO15)` → `IN` *(RELAY_PIN)*
 
 **High Voltage: Relay Module → 220V Appliance**
