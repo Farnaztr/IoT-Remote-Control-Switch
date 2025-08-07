@@ -186,6 +186,12 @@ http://192.168.X.X
 
  💻 [Bit-Zone](https://t.me/CodeMatrixx)
 
+ ---
+ 
+ ## 📱 on YouTube
+ 
+ 💻 [Bit-Zone](https://www.youtube.com/watch?v=w757_zSKAsI)
+
 ---
 
 ✍️ Made by [Farnaz](https://github.com/Farnaztr)
