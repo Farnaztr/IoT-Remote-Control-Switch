@@ -181,12 +181,6 @@ http://192.168.X.X
 - If unsure, consult a qualified electrician.
 
 ---
-
-## 📱 on Telegram
-
- 💻 [Bit-Zone](https://t.me/CodeMatrixx)
-
- ---
  
  ## 📱 on YouTube
  
