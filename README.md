@@ -87,7 +87,7 @@ This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
 ---
 
-## 🔌 Wiring Diagram
+## Wiring Diagram
 
 **Low Voltage: NodeMCU → Relay Module**
 
@@ -108,7 +108,7 @@ This project uses a **NodeMCU ESP8266** board configured as a mini web server:
 
 ---
 
-## 💻 Software Setup
+## Software Setup
 
 ### 1. Preparing the Arduino IDE
 
@@ -157,7 +157,7 @@ const int RELAY_PIN = D8;
 
 ---
 
-## 📱 Using the Switch
+## Using the Switch
 
 1. Open **Serial Monitor** (baud: 115200) after upload.
 2. Wait for this message:
